@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Prajeet - Java Developer, Web Developer, Machine Learning Enthusiast">
+    <title>Prajeet's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Prajeet</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate developer with experience in Java, web development, machine learning, and operating systems. I have worked on various projects that showcase my ability to solve complex problems efficiently, and I’m constantly exploring new technologies. With strong analytical skills and a dedication to continuous learning, I aim to contribute impactful solutions in the tech world.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Java <span class="rating" data-rating="90"></span></li>
+                        <li>JavaScript <span class="rating" data-rating="85"></span></li>
+                        <li>HTML & CSS <span class="rating" data-rating="80"></span></li>
+                        <li>Python <span class="rating" data-rating="75"></span></li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>React.js <span class="rating" data-rating="70"></span></li>
+                        <li>Node.js <span class="rating" data-rating="65"></span></li>
+                        <li>MongoDB <span class="rating" data-rating="60"></span></li>
+                        <li>Git <span class="rating" data-rating="85"></span></li>
+                        <li>APIs (Pixabay, Pexels) <span class="rating" data-rating="75"></span></li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Linear Regression <span class="rating" data-rating="85"></span></li>
+                        <li>Gradient Boosting <span class="rating" data-rating="80"></span></li>
+                        <li>Ensemble Models <span class="rating" data-rating="75"></span></li>
+                        <li>Accuracy Score Calculation <span class="rating" data-rating="80"></span></li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Operating Systems</h3>
+                    <ul>
+                        <li>IPC Mechanisms <span class="rating" data-rating="75"></span></li>
+                        <li>Synchronization <span class="rating" data-rating="80"></span></li>
+                        <li>Race Conditions <span class="rating" data-rating="70"></span></li>
+                        <li>Message Passing <span class="rating" data-rating="75"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project" data-category="web">
+                    <h3>TechMosaic</h3>
+                    <p>A news aggregator website built with Java that filters news based on user preferences, pulling data from various sources such as Times of India, The Hindu, and Deccan Chronicle.</p>
+                </div>
+                <div class="project" data-category="web">
+                    <h3>Expense Tracker</h3>
+                    <p>An app developed using the MERN stack to help users manage daily expenses and receive financial advice.</p>
+                </div>
+                <div class="project" data-category="web">
+                    <h3>E-commerce Website</h3>
+                    <p>An online platform for selling musical instruments with a user-friendly interface and robust backend.</p>
+                </div>
+                <div class="project" data-category="ml">
+                    <h3>Air Quality Prediction Model</h3>
+                    <p>A machine learning model that predicts air quality using regression algorithms and ranking methods to assess pollutant levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: prajeet@example.com</p>
+            <p>GitHub: <a href="https://github.com/18prajeet/TechVayuna" target="_blank">github.com/18prajeet/TechVayuna</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/prajeet" target="_blank">linkedin.com/in/prajeet</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #f4f4f4, #e0eafc);
+    color: #333;
+    transition: background 0.5s ease-in-out;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #333, #ffa500);
+    color: #fff;
+    padding: 1.5rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation: fadeInDown 1s ease;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 25px;
+}
+
+nav ul li a:hover {
+    background-color: #ffa500;
+    color: #333;
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about, .skills, .projects, footer {
+    background-color: #fff;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    animation: fadeIn 1s ease;
+}
+
+/* Skill Bars */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.rating-bar {
+    background: linear-gradient(90deg, #ffa500, #ff7b00);
+    height: 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 12px;
+    margin-top: 5px;
+    width: 0;
+    animation: growBar 1.5s forwards;
+}
+
+/* Project Filters */
+.project-filters {
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 25px;
+}
+
+.filter-btn:hover {
+    background-color: #ffa500;
+}
+
+.projects-grid .project {
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #333, #ffa500);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    animation: fadeInUp 1s ease;
+}
+
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes growBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--bar-width);
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
